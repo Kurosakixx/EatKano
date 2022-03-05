@@ -441,12 +441,11 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             SubmitResults();
         }
 
-        if (cps <= 10) return '要不咱练练？';
-        if (cps <= 30) return '还不错';
-        if (cps <= 50)  return '恭喜您';
-        if (cps <= 80) return '有点牛哇';
-        if (cps <= 100) return '太强了';
-        return '您别玩了，咋这么强啊？';
+        if (cps <= 1) return '要不咱练练？';
+        if (cps <= 3) return '还不错';
+        if (cps <= 5)  return '恭喜您';
+        if (cps <= 8) return '太强啦';
+        return '您太厉害啦？';
     }
 
     function toStr(obj) {
